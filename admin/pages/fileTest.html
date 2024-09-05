@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <title>FACTEASY :: ADMINISTRATION</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- menu CSS -->
+    <link href="../css/menu.css" rel="stylesheet" media="all">
+    <!-- Custom CSS -->
+    <link href="../css/system.css" rel="stylesheet">
+    <!-- New Sidebar and Layout CSS -->
+
+</head>
+
+<body>
+<div id="navi">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+                <nav id='cssmenu'>
+                    <div id="head-mobile"></div>
+                    <div class="button"></div>
+                    <ul>
+                        <li><a href='#' class="module-link" data-module="academic">Gestion académique</a></li>
+                        <li><a href='#' class="module-link" data-module="grades">Gestion de notes</a></li>
+                        <li><a href='#' class="module-link" data-module="users">Gestion des utilisateurs</a></li>
+                        <li><a href='#' class="module-link" data-module="reporting">Gestion de reporting</a></li>
+                        <li><a href='#'>Aide</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-3">
+                <div class="connexion text-right">
+                    <ul class="list-inline">
+                        <li><a href="#" class="btn btn-default">Bonjour <b>Admin</b></a></li>
+                        <li><a href="#" class="btn">Se deconnecter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sidebar" id="mySidebar">
+    <div class="sidebar-header">
+        <img src="../images/logo.png" alt="Logo" class="logo">
+    </div>
+    <!-- Sidebar content will be dynamically populated -->
+</div>
+
+<div class="main-content">
+    <div class="admin-page-entete">
+        <div class="ariane">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Administration</a></li>
+                            <li id="current-module">Module</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="admin-page">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="admin-section-title">
+                            <h2 id="module-title">Module Title</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="admin-page-content">
+        <div class="container-fluid">
+            <div id="module-content">
+                <div class="admin-page-content">
+                    <div class="container-fluid">
+                        <div class="add-content">
+                           <h4>Choix de la filiere</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="admin-page-filter" >
+                                    <h4>Mettre à jour les options</h4>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="filtre-affichage">
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <!--<label for="admin-page-statut" class="control-label col-xs-2">statut:</label>-->
+                                                        <div class="col-xs-12">
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <div class="filter-btn">
+                                                <a href="#" class="btn btn-default">Mettre à jour</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="tableau">
+                                    <table class="table table-condensed table-hover table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th class="select-all"><input class="form-checkbox" title="Sélectionner toutes les lignes du tableau" type="checkbox"></th>
+                                            <th><a href="#" title="trier par Titre" class="active">Titre</a></th>
+                                            <th class="active up"><a href="#" title="trier par Type" class="active">Type <img src="images/arrow.png" width="13"></a></th>
+                                            <th>Auteur</th>
+                                            <th><a href="#" title="trier par Statut" class="active">Statut</a></th>
+                                            <th class="active"><a href="#" title="trier par Mis à jour" class="active">Mis à jour <img src="images/arrow.png" width="13"></a></th>
+                                            <th><a href="#" title="trier par Langue" class="active">Langue</a></th>
+                                            <th>Actions</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td><input class="form-checkbox" title="Sélectionner cette ligne" type="checkbox"></td>
+                                            <td><a href="#" title="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></td>
+                                            <td>Type</td>
+                                            <td>Admin</td>
+                                            <td>publié</td>
+                                            <td>09/14/2017 - 00:48</td>
+                                            <td>Français</td>
+                                            <td><ul class="list-inline"><li><a href="#">modifier</a></li><li><a href="#">supprimer</a></li></ul></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input class="form-checkbox" title="Sélectionner cette ligne" type="checkbox"></td>
+                                            <td><a href="#" title="">Maecenas porttitor congue massa. </a></td>
+                                            <td>Type</td>
+                                            <td>Admin</td>
+                                            <td>publié</td>
+                                            <td>09/14/2017 - 00:48</td>
+                                            <td>Français</td>
+                                            <td><ul class="list-inline"><li><a href="#">modifier</a></li><li><a href="#">supprimer</a></li></ul></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input class="form-checkbox" title="Sélectionner cette ligne" type="checkbox"></td>
+                                            <td><a href="#" title="">Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero</a></td>
+                                            <td>Type</td>
+                                            <td>Admin</td>
+                                            <td>publié</td>
+                                            <td>09/14/2017 - 00:48</td>
+                                            <td>Français</td>
+                                            <td><ul class="list-inline"><li><a href="#">modifier</a></li><li><a href="#">supprimer</a></li></ul></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="copyright">
+                    &copy; 2024 facteasy.net
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="owner text-right">
+                    MAUCLAIR
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Responsive menu -->
+<script src="../js/menu.js"></script>
+<script src="../js/scroll.js"></script>
+
+<!-- New JavaScript for sidebar and module functionality -->
+<script>
+    $(document).ready(function() {
+        var subModules = {
+            academic: ['Gestion de departement', 'Gestion de Filiere', 'Gestion des cours', ' Année académique'],
+            grades: ['Gestion d\'examen', 'Gestion de Correction'],
+            users: ['Liste du personnel', 'Nomination', 'Modifier un Personnel', 'Supprimer un Peersonnel'],
+            reporting: ['PV', 'Admis', 'Attestation', 'Certificat', 'Relevé de note','Diplome']
+        };
+
+        var moduleTitles = {
+            academic: 'Gestion académique',
+            grades: 'Gestion de notes',
+            users: 'Gestion des utilisateurs',
+            reporting: 'Gestion de reporting'
+        };
+
+        function updateSidebar(module) {
+            var sidebarContent = '<div class="sidebar-header"><img src="../images/image.png" alt="Logo" class="logo"></div> ' +
+                '<a href="#" class="module-link" data-module="' + module + '">' + moduleTitles[module] + '</a>';
+            subModules[module].forEach(function(subModule) {
+                sidebarContent += '<a href="#" class="sub-module">' + subModule + '</a>';
+            });
+            $('#mySidebar').html(sidebarContent);
+        }
+
+        function updateContent(module, subModule) {
+            $('#module-title').text(moduleTitles[module]);
+            $('#current-module').text(moduleTitles[module]);
+            $('#module-contet').html('<h3>' + subModule + '</h3><p>Contenu pour ' + subModule + ' dans le module ' + moduleTitles[module] + '.</p>');
+        }
+
+        $(document).on('click', '.module-link', function(e) {
+            e.preventDefault();
+            var module = $(this).data('module');
+            updateSidebar(module);
+            updateContent(module, subModules[module][0]);
+        });
+
+        $(document).on('click', '.sub-module', function(e) {
+            e.preventDefault();
+            var subModule = $(this).text();
+            var module = $('.module-link').first().data('module');
+            updateContent(module, subModule);
+        });
+        updateSidebar('academic');
+        updateContent('academic', subModules['academic'][0]);
+    });
+</script>
+</body>
+</html>
