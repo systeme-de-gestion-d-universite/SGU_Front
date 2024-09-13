@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulaire des Requêtes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Formulaire de Requête -->
+    <div class="form-container">
+      <h2>Formulaire de Requête (Corrections)</h2>
+      <form id="requestForm">
+        <!-- Champ caché pour l'ID de l'examen -->
+        <input type="hidden" id="examId" name="examId" value="">
+
+        <!-- Liste déroulante pour sélectionner le nom de l'examen -->
+        <div class="form-group">
+          <label for="examName">Nom de l'examen</label>
+          <select id="examName" name="examName" required>
+            <option value="">Sélectionner un examen</option>
+            <option value="Examen 1">Contrôle continu</option>
+            <option value="Examen 2">Travaux Pratiques</option>
+            <option value="Examen 3">Session normale</option>
+            <option value="Examen 3">Rattrapage</option>
+
+          </select>
+        </div>
+
+        <!-- Champ pour le nom de l'étudiant -->
+        <div class="form-group">
+          <label for="studentName">Nom de l'étudiant</label>
+          <input type="text" id="studentName" name="studentName" placeholder="Entrez le nom de l'étudiant" required>
+        </div>
+
+        <!-- Champ pour le matricule -->
+        <div class="form-group">
+          <label for="studentMatricule">Matricule</label>
+          <input type="text" id="studentMatricule" name="studentMatricule" placeholder="Entrez le matricule" required>
+        </div>
+
+        <!-- Champ pour la note -->
+        <div class="form-group">
+          <label for="grade">Note</label>
+          <input type="number" id="grade" name="grade" placeholder="Entrez la note" required>
+        </div>
+
+        <!-- Champ pour l'annonymat -->
+        <div class="form-group">
+          <label for="annonymat">Annonymat</label>
+          <input type="text" id="annonymat" name="annonymat" placeholder="Entrez l'annonymat" required>
+        </div>
+
+        <!-- Champ pour le statut -->
+        <div class="form-group">
+          <label for="status">Statut</label>
+          <select type="radio" id="status" name="status" placeholder="Statut de l'étudiant" required>
+           <option value="rejected">Rejecté</option>
+           <option value="accepted">Accepté</option>
+        </select>
+        
+        </div>
+
+        <!-- Liste déroulante pour la nature de la requête -->
+        <div class="form-group">
+          <label for="requestType">Nature de la requête</label>
+          <select id="requestType" name="requestType" required>
+            <option value="">Sélectionner la nature de la requête</option>
+            <option value="NOTE">Correction de note</option>
+            <option value="NOM">Correction de Nom</option>
+            <option value="MATRICULE">Correction de Matricule</option>
+          </select>
+        </div>
+
+        <!-- Bouton de soumission -->
+        <div class="form-group">
+          <button type="submit">Envoyer la requête</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Tableau des Requêtes -->
+    <div class="table-container">
+      <h2>Liste des Requêtes</h2>
+      <table id="requestsTable">
+        <thead>
+          <tr>
+            <th>ID Examen</th>
+            <th>Nom Examen</th>
+            <th>Nom Étudiant</th>
+            <th>Matricule</th>
+            <th>Note</th>
+            <th>Annonymat</th>
+            <th>Statut</th>
+            <th>Nature Requête</th>
+            <th>Détails</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Les requêtes soumises seront ajoutées ici -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
