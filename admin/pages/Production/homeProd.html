@@ -78,8 +78,7 @@
                     <div class="col-md-12">
                         <ul class="breadcrumb">
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">Administration</a></li>
-                            <li>Gestion académique</li>
+                            <li>Production</li>
                         </ul>
                     </div>
                 </div>
@@ -90,90 +89,210 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="admin-section-title">
-                            <h2>Gestion académique</h2>
+                            <h2>Producion des Documents</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-        <div class="admin-page-content-service">
-            <div class="container-fluid">
-                <div class="col-xs-3">
-                    <select class="form-control" id="procetVerbaleSelector">
-                        <option value="recapitulatif">Proces Verbale Recapitulatif</option>
-                        <option value="verbale">Proces Verbale</option>
-                        <option value="verbale">Proces Verbale de Correction</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-
-        <div class="admin-page-content">
-            <div class="container-fluid ">
-
-                <div class="row">
-                    <!-- Tableau Recapitulatif -->
-                    <div class="row" id="recapitulatifContent">
-                        <div class="col-md-3">
+    
+                    <div class="admin-page-content-service">
+                        <div class="row hidden" id="verbaleContent"></div>
+                        <div class="col-md-4">
+                        <div class="filtre-affichage">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="modelSelect" class="control-label col-xs-2">Model:</label>
+                                    <div class="col-xs-12">
+                                        <select id="modelSelect" class="form-control">
+                                            <option value="note">Note</option>
+                                            <option value="correction">Correction</option>
+                                            <option value="deliberation">Deliberation</option>
+                                            <option value="documents">Documents</option>
+                                            <option value="fiche">Fiche</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                        <div class="col-md-4">
                             <div class="filtre-affichage">
                                 <form class="form-horizontal">
                                     <div class="form-group">
-                                        <label form="admin-page-statut" class="control-label col-xs-2">Année:</label>
+                                        <label for="admin-page-statut" class="control-label col-xs-2">Annee:</label>
                                         <div class="col-xs-12">
-                                            <select id="anneeRecap" class="form-control">
+                                            <select class="form-control">
+                                                <option>2026</option>
+                                                <option>2025</option>
                                                 <option>2024</option>
                                                 <option>2023</option>
                                                 <option>2022</option>
                                                 <option>2021</option>
+                                                <option>2020</option>
                                             </select>
+                                            
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="filtre-affichage">
                                 <form class="form-horizontal">
                                     <div class="form-group">
-                                        <label form="admin-page-statut" class="control-label col-xs-2">Filiere:</label>
+                                        <label for="admin-page-statut" class="control-label col-xs-2">Filiere:</label>
                                         <div class="col-xs-12">
-                                            <select id="filiereRecap" class="form-control">
+                                            <select class="form-control" id="filiereSelect">
                                                 <option>Informatique</option>
                                                 <option>Mathematique</option>
                                                 <option>GeoSciences</option>
                                                 <option>GeosSciences</option>
+                                                <option>Chimie</option>
+                                                <option>BOV</option>
+                                                <option>BOA</option>
+                                                <option>STU</option>
+                                                <option>ICT4D</option>
                                             </select>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
+            <div class="filtre-affichage">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="natureSelect" class="control-label col-xs-2">Nature:</label>
+                        <div class="col-xs-12">
+                            <select id="natureSelect" class="form-control">
+                                <option>PV_UE</option>
+                                <option>PV_RECAP</option>
+                                <option>RECAP</option>
+                                <option>LISTE DES ADMIS</option>
+                                <option>RELEVE DE NOTES</option>
+                                <option>ATTESTATION</option>
+                                <option>DIPLOME</option>
+                                <option>CERTIFICATE DE SCOLARITE</option>
+                                <option>INSCRIPTION</option>
+                                <option>CARTE D'ETUDIANT</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+                        <div class="row hidden" id="verbaleContent"></div>
+                        <div class="col-md-4">
                             <div class="filtre-affichage">
                                 <form class="form-horizontal">
                                     <div class="form-group">
-                                        <label form="admin-page-statut" class="control-label col-xs-2">Niveau:</label>
+                                        <label for="admin-page-statut" class="control-label col-xs-2">Departement:</label>
                                         <div class="col-xs-12">
-                                            <select id="niveauRecap" class="form-control">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
+                                             <select class="form-control" id="departementSelect">
+                                                <option>Informatique</option>
+                                                <option>Mathematique</option>
+                                                <option>GeoSciences</option>
+                                                <option>GeosSciences</option>
+                                                <option>Chimie</option>
+                                                <option>BOV</option>
+                                                <option>BOA</option>
+                                                <option>STU</option>
+                                                <option>ICT4D</option>
                                             </select>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
-
-                        <div class="col-md-1"></br>
-                            <div class="filter-btn">
-                                <a href="#" class="btn btn-default">Afficher</a>
+                        <div class="col-md-4">
+                            <div class="filtre-affichage">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="admin-page-statut" class="control-label col-xs-2">Niveau:</label>
+                                        <div class="col-xs-12">
+                                            <select class="form-control">
+                                                <option>Licence 1</option>
+                                                <option>Licence 2</option>
+                                                <option>Licence 3</option>
+                                                <option>Master 1</option>
+                                                <option>Master 2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
+                         <div class="col-md-4" id="matriculeField" style="display:none;">
+                            <div class="filtre-affichage">
+                                <form class="form-horizontal">
+                                     <div class="form-group">
+                                        <label for="matricule" class="control-label col-xs-2">Matricule:</label>
+                                         <div class="col-xs-12">
+                                            <input type="search" name="matricule" id="matricule" class="form-control">
+                                         </div>
+                                     </div>
+                                 </form>
+                                </div>
+                             </div>
+
+                            <div class="col-md-4" id="nomField" style="display:none;">
+                                <div class="filtre-affichage">
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <label for="nom" class="control-label col-xs-2">Nom:</label>
+                                            <div class="col-xs-12">
+                                                <select id="nom" class="form-control">
+                                                    <option>Antagana du pont</option>
+                                                    <option>Imballa boulanger</option>
+                                                    <option>Kenojou du poisson</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        <div class="col-md-4">
+                            <div class="filtre-affichage">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="admin-page-statut" class="control-label col-xs-2">Matiere:</label>
+                                        <div class="col-xs-12">
+                                            <select id="matiereProc" class="form-control">
+                                                <option>Inf211</option>
+                                                <option>Inf212</option>
+                                                <option>Inf221</option>
+                                                <option>Inf222</option>
+                                                <option>Inf231</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+    
+                    <div class="col-md-1">
+                    </br>
+                         <div class="filter-btn">
+                            <button id="executerBtn" class="btn btn-default">Executer</button>
+                        </div>
+                    </div>
+            <div class="col-md-1">
+                <br>
+                <div class="filter-btn">
+                    <a href="#" class="btn btn-default">Production</a>
+                </div>
+            </div>
+        
+        <div class="admin-page-content">
+            <div class="container-fluid ">
+
+                <div class="row"id="tableRecap" style="display:none;" >
+                    <!-- Tableau Recapitulatif -->
+
+                        
                         <div class="col-md-12">
                             <div class="tableau">
                                 <table class="table table-condensed table-hover table-striped">
@@ -234,135 +353,17 @@
                         </div>
                     </div>
 
-                    <!-- Tableau Proces Verbale pour les notes d'une matière -->
-                    <div class="row hidden" id="verbaleContent">
-                        <div class="col-md-2">
-                            <div class="filtre-affichage">
-                                <form class="form-horizontal">
-                                    <div class="form-group">
-                                        <label form="admin-page-statut" class="control-label col-xs-2">Année:</label>
-                                        <div class="col-xs-12">
-                                            <select id="anneeProc" class="form-control">
-                                                <option>2024</option>
-                                                <option>2023</option>
-                                                <option>2022</option>
-                                                <option>2021</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="filtre-affichage">
-                                <form class="form-horizontal">
-                                    <div class="form-group">
-                                        <label form="admin-page-statut" class="control-label col-xs-2">Filiere:</label>
-                                        <div class="col-xs-12">
-                                            <select id="filiereProc" class="form-control">
-                                                <option>Informatique</option>
-                                                <option>Mathematique</option>
-                                                <option>GeoSciences</option>
-                                                <option>GeosSciences</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="filtre-affichage">
-                                <form class="form-horizontal">
-                                    <div class="form-group">
-                                        <label form="admin-page-statut" class="control-label col-xs-2">Niveau:</label>
-                                        <div class="col-xs-12">
-                                            <select id="niveauProc" class="form-control">
-                                                <option>Licence 1</option>
-                                                <option>Licence 2</option>
-                                                <option>Licence 3</option>
-                                                <option>Master 1</option>
-                                                <option>Master 2</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="filtre-affichage">
-                                <form class="form-horizontal">
-                                    <div class="form-group">
-                                        <label form="admin-page-statut" class="control-label col-xs-2">Matiere:</label>
-                                        <div class="col-xs-12">
-                                            <select id="matiereProc" class="form-control">
-                                                <option>Inf211</option>
-                                                <option>Inf212</option>
-                                                <option>Inf221</option>
-                                                <option>Inf222</option>
-                                                <option>Inf231</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-md-1"></br>
-                            <div class="filter-btn">
-                                <a href="#" class="btn btn-default">Afficher</a>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="tableau">
-                                <table class="table table-condensed table-hover table-striped">
-                                    <thead>
-                                    <tr>
-                                        <th class="numbers">No</th>
-                                        <th>Nom et Prenom</th>
-                                        <th>Matricule</th>
-                                        <th>Niveau</th>
-                                        <th>CC</th>
-                                        <th>TP</th>
-                                        <th>SN</th>
-                                        <th>TOTAL</th>
-                                        <TH>ACTION</TH>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>0001</td>
-                                        <td>atangana jean vincet</td>
-                                        <td>24o9090</td>
-                                        <td>INF-L1</td>
-                                        <td>20</td>
-                                        <td>25</td>
-                                        <td>40</td>
-                                        <td>85</td>
-                                        <Td><a href="#">Modifier</a></Td>
-                                    </tr>
-                                    <tr>
-                                        <td>0001</td>
-                                        <td>atangana jean vincet</td>
-                                        <td>24o9090</td>
-                                        <td>INF-L1</td>
-                                        <td>20</td>
-                                        <td>25</td>
-                                        <td>40</td>
-                                        <td>85</td>
-                                        <td><a href="#">modifier</a></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Fin du contenu spécifique -->
+                    
                 </div>
             </div>
         </div>
     </div>
 </div>
+</div>
+</body>
 <script src="../../js/procetVerbal.js"></script>
 <script src="../../js/header.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/doc.js"></script>
 </body>
 </html>
