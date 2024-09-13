@@ -8,45 +8,74 @@
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="../css/system.css" rel="stylesheet">
     <link href="../css/menu.css" rel="stylesheet">
+    <link href="../css/headermenu.css" rel="stylesheet">
 </head>
 <body>
-<div id="navi">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-9">
-                <nav id='cssmenu'>
-                    <ul>
-                        <li><a href='home.html'>Tableau de bord</a></li>
-                        <li><a href='academic.html'>Gestion académique</a></li>
-                        <li><a href='grades.html'>Gestion de notes</a></li>
-                        <li><a href='users.html'>Gestion des utilisateurs</a></li>
-                        <li><a href='reporting.html'>Gestion de reporting</a></li>
-                        <li><a href='#'>Aide</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-md-3">
-                <div class="connexion text-right">
-                    <ul class="list-inline">
-                        <li><a href="#" class="btn btn-default">Bonjour <b>Admin</b></a></li>
-                        <li><a href="#" class="btn">Se déconnecter</a></li>
-                    </ul>
-                </div>
-            </div>
+<!-- Barre de navigation -->
+<header>
+    <div class="navbarHeader">
+        <div class="logoHeader">
+            <img src="../images/image.png" alt="Logo" /></div>
+        <div class="titleHeader">SYGEN</div>
+        <button id="menuButton">MENU &#9776;</button>
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher des fonctions, des domaines ou de l’aide..." />
+        </div>
+        <div class="right-icons">
+            <i class="fas fa-user"></i>
+            <i class="fas fa-bell md-3"></i>
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-comments"></i>
         </div>
     </div>
-</div>
+</header>
 
+<!-- Menu déroulant -->
+<nav id="menu" class="menu-hidden">
+    <div class="menu-container">
+        <button id="closeMenu" class="close-btn">&times;</button>
+        <div class="menu-items">
+            <button class="menu-item">
+                <i class="fas fa-user-plus"></i> Preinscription
+            </button>
+            <button class="menu-item">
+                <i class="fas fa-user-edit"></i> Inscription
+            </button>
+            <button class="menu-item">
+                <i class="fas fa-university"></i> Gestion Academiques
+            </button>
+            <button class="menu-item">
+                <i class="fas fa-keyboard"></i> Saisie de Notes
+            </button>
+            <button class="menu-item">
+                <i class="fas fa-users-cog"></i> Jury de Correction
+            </button>
+            <button class="menu-item">
+                <i class="fas fa-file-alt"></i> Production de Documents
+            </button>
+            <button class="menu-item">
+                <i class="fas fa-gavel"></i> Jury et Deliberation
+            </button>
+            <button class="menu-item">
+                <i class="fas fa-chart-line"></i> Reporting
+            </button>
+            <button class="menu-item">
+                <i class="fas fa-users"></i> Gestion du Personnel
+            </button>
+        </div>
+    </div>
+</nav>
 <div class="sidebar" id="mySidebar">
     <div class="sidebar-header">
-        <img src="../images/image.png" alt="Logo" class="logo">
+        <a href="#">Gestion de departement</a>
+        <a href="#">Gestion de Filière</a>
+        <a href="#">Gestion des cours</a>
+        <a href="#">Année académique</a>
     </div>
-    <a href="#">Gestion de departement</a>
-    <a href="#">Gestion de Filière</a>
-    <a href="#">Gestion des cours</a>
-    <a href="#">Année académique</a>
+
 </div>
 
 <div class="main-content">
@@ -144,6 +173,7 @@
 
 <!-- jQuery -->
 <script src="../js/jquery.js"></script>
+<script src="../js/header.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.min.js"></script>
 </body>
