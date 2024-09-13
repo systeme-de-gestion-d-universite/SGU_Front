@@ -110,7 +110,9 @@ p {
 /******************************admin page content*************************************/
 .admin-page-content {
   background-color: #fff;
+  overflow-x: auto;
   padding: 30px 0;
+  max-width: 100%;
 }
 .admin-page-content a {
   color: #0074BD;
@@ -121,6 +123,7 @@ p {
   position: relative;
   margin: 1em 0;
 }
+
 .admin-page-content .control-label {
   text-align: left;
 }
