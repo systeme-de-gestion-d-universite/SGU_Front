@@ -1,0 +1,129 @@
+
+.liste-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content:flex-start ;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+
+.liste-item {
+    flex-direction: column;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 15px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    display: flex;
+    gap: 10px;
+    height: 20%;
+    width: 30%;
+}
+
+.liste-item i {
+    font-size: 200%;
+    position: relative;
+    margin-left: -0.5%;
+}
+
+.liste-item:hover {
+    background-color: #ddd;
+    color: #f38f31;
+}
+.stat{
+flex-direction:column;
+font-size: bold;
+align-items: flex-start;
+}
+
+
+.filiere-items {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content:flex-start ;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+
+.filiere-item {
+    flex-direction: column;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 15px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    display: flex;
+    gap: 10px;
+    height: 10%;
+    width: 20%;
+}
+i:hover{
+    color: #f38f31;
+}
+.filiere-item i {
+    font-size: 100%;
+    position: relative;
+    margin-left: -0.5%;
+}
+
+.filiere-item:hover {
+    background-color: #ddd;
+    
+}
+
+.tableau-filiere{
+    margin-left: 22%;
+    margin-top: -29%;
+    width: 70%;
+    position: absolute;
+    flex-direction: row;
+}
+.ActionMultiple{
+    flex: auto;
+    position: relative;
+    justify-content: flex-end;
+    color:red;
+    margin-top: 36%;
+}
+.table-filiere{
+    max-width: 100%;
+    position: absolute;
+}
+
+
+.filiere-item .ico{
+    position: relative;
+    margin-left: 170px;
+    height: fit-content;
+    top: -80px;
+}
+.filiere-item .ico1{
+    flex-direction: row;
+    position: relative;
+    margin-left: 170px;
+    top: -60px;
+    margin-bottom: -50px;
+}
+.ico .ico1:hover{
+    color: red;
+}
+
+.table-filiere tr td i{
+    color: black;
+    align-content: space-between;
+    justify-content: flex-end;
+
+    flex: content;
+    display: inline;
+}

@@ -3,6 +3,7 @@ const menu = document.getElementById("menu");
 const closeMenu = document.getElementById("closeMenu");
 
 menuButton.addEventListener("click", () => {
+    
     menu.style.display = "block";
 });
 
@@ -14,6 +15,7 @@ closeMenu.addEventListener("click", () => {
 const menuItems = document.querySelectorAll('.menu-item');
 menuItems.forEach(item => {
     item.addEventListener('click', () => {
+        
         menu.style.display = 'none';
     });
 });

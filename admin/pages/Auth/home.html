@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FACTEASY :: GESTION ACADÉMIQUE</title>
+
     <!-- Bootstrap Core CSS -->
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="../../css/system.css" rel="stylesheet">
     <link href="../../css/menu.css" rel="stylesheet">
     <link href="../../css/headermenu.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/academique.css">
 </head>
 <body>
+
 <!-- Barre de navigation -->
 <header>
     <div class="navbarHeader">
@@ -39,45 +43,55 @@
         <button id="closeMenu" class="close-btn">&times;</button>
         <div class="menu-items">
             <button class="menu-item">
-                <i class="fas fa-user-plus"></i> Preinscription
+                <a href="">
+                    <i class="fas fa-user-plus"></i> Preinscription
+                </a>
             </button>
             <button class="menu-item">
-                <i class="fas fa-user-edit"></i> Inscription
+                <a href="">
+                    <i class="fas fa-user-edit"></i> Inscription
+                </a>
             </button>
             <button class="menu-item">
                 <a href="./home.html">
-                <i class="fas fa-university"></i> Gestion Academiques</a>
+                    <i class="fas fa-university"></i> Gestion Academiques
+                </a>
             </button>
             <button class="menu-item">
-                <i class="fas fa-keyboard"></i> Saisie de Notes
+                <a href="">
+                    <i class="fas fa-keyboard"></i> Saisie de Notes
+                </a>
             </button>
             <button class="menu-item">
-                <i class="fas fa-users-cog"></i> Jury de Correction
+                <a href="">
+                    <i class="fas fa-users-cog"></i> Jury de Correction
+                </a>
             </button>
             <button class="menu-item">
+                <a href="">
                 <i class="fas fa-file-alt"></i> Production de Documents
+            </a>
             </button>
             <button class="menu-item">
-                <i class="fas fa-gavel"></i> Jury et Deliberation
+                <a href="">
+                    <i class="fas fa-gavel"></i> Jury et Deliberation
+                </a>
+                
             </button>
             <button class="menu-item">
-                <i class="fas fa-chart-line"></i> Reporting
+                <a href="">
+                    <i class="fas fa-chart-line"></i> Reporting
+                </a>
+                
             </button>
             <button class="menu-item">
-                <i class="fas fa-users"></i> Gestion du Personnel
+                <a href="">
+                    <i class="fas fa-users"></i> Gestion du Personnel
+                </a>
             </button>
         </div>
     </div>
 </nav>
-<div class="sidebar" id="mySidebar">
-    <div class="sidebar-header">
-        <a href="#">Gestion de departement</a>
-        <a href="#">Gestion de Filière</a>
-        <a href="#">Gestion des cours</a>
-        <a href="#">Année académique</a>
-    </div>
-
-</div>
 
 <div class="main-content">
     <div class="admin-page-entete">
@@ -86,9 +100,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="breadcrumb">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Administration</a></li>
-                            <li>Gestion académique</li>
+                            <li><a href="#">Gestion académique</a></li>
+                            <li><a href="#">Departement</a></li>
+                            <li><a href="#">Filiere</a></li>
                         </ul>
                     </div>
                 </div>
@@ -112,48 +126,251 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="add-content">
-                        <h4>Choix de la filière</h4>
+                        <h4>Liste des Departements</h4>
                     </div>
-                    <!-- Contenu spécifique pour la gestion académique -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="tableau">
-                                <table class="table table-condensed table-hover table-striped">
-                                    <thead>
-                                    <tr>
-                                        <th class="select-all"><input class="form-checkbox" title="Sélectionner toutes les lignes du tableau" type="checkbox"></th>
-                                        <th>Titre</th>
-                                        <th>Type</th>
-                                        <th>Auteur</th>
-                                        <th>Statut</th>
-                                        <th>Mis à jour</th>
-                                        <th>Langue</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td><input class="form-checkbox" title="Sélectionner cette ligne" type="checkbox"></td>
-                                        <td>Lorem ipsum dolor sit amet</td>
-                                        <td>Type</td>
-                                        <td>Admin</td>
-                                        <td>publié</td>
-                                        <td>09/14/2017 - 00:48</td>
-                                        <td>Français</td>
-                                        <td><a href="#">modifier</a> | <a href="#">supprimer</a></td>
-                                    </tr>
-                                    <!-- Ajoutez d'autres lignes ici -->
-                                    </tbody>
-                                </table>
+                    <div class="liste-items">
+                        <button class="liste-item">
+                            <a href="">
+                                <i class="fas fa-book"></i> Informatique
+                            </a>
+                            <div class="stat">
+                                filiere=2
                             </div>
-                        </div>
-                    </div>
-                    <!-- Fin du contenu speci -->
+                            <div class="stat">
+                                effectif=1200
+                            </div>
+                        </button>
+                        <button class="liste-item">
+                            <a href="">
+                                <i class="fas fa-book"></i> Mathematiques
+                            </a>
+                            <div class="stat">
+                                filiere=2
+                            </div>
+                            <div class="stat">
+                                effectif=1200
+                            </div>
+                        </button>
+                        <button class="liste-item">
+                            <a href="./home.html">
+                                <i class="fas fa-book"></i> Physiques
+                            </a>
+                            <div class="stat">
+                                filiere=2
+                            </div>
+                            <div class="stat">
+                                effectif=1200
+                            </div>
+                        </button>
+                        <button class="liste-item">
+                            <a href="">
+                                <i class="fas fa-book"></i> GeoSciences
+                            </a>
+                            <div class="stat">
+                                filiere=2
+                            </div>
+                            <div class="stat">
+                                effectif=1200
+                            </div>
+                        </button>
+                        <button class="liste-item">
+                            <a href="">
+                                <i class="fas fa-book"></i> Biosciences
+                            </a>
+                            <div class="stat">
+                                filiere=2
+                            </div>
+                            <div class="stat">
+                                effectif=1200
+                            </div>
+                        </button>
+                        <button class="liste-item">
+                            <a href="">
+                            <i class="fas fa-book"></i> Chimie
+                        </a>
+                        <div class="stat">
+                                filiere=2
+                            </div>
+                            <div class="stat">
+                                effectif=1200
+                            </div>
+                        </button>
+                        <button class="liste-item">
+                            <a href="">
+                                <i class="fas fa-book"></i> STU
+                            </a>
+                           <div class="stat">
+                                filiere=2
+                            </div>
+                            <div class="stat">
+                                effectif=1200
+                            </div> 
+                        </button>
+                        <button class="liste-item">
+                            <a href="">
+                                <i class="fas fa-book"></i> biochimie
+                            </a>
+                            <div class="stat">
+                                filiere=2
+                            </div>
+                            <div class="stat">
+                                effectif=1200
+                            </div>
+                        </button>
+                        <button class="liste-item">
+                            <a href="">
+                                <i class="fas fa-book"></i> Energie renouvellable
+                            </a>
+                            <div class="stat">
+                                filiere=2
+                            </div>
+                            <div class="stat">
+                                effectif=1200
+                            </div>
+                        </button>
+                    </div>                 
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div class="main-content">
+    <div class="admin-page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="add-content">
+                        <h3>Filières</h3>
+                    </div>
+                    <div class="filiere-items">
+                        <button class="filiere-item">
+                            <a href="">
+                                <i class="fas fa-book"></i> INFO-FONDA
+                            </a>
+                            <div class="stat">
+                                effectif=1200
+                            </div>
+                            <i class="fas fa-edit ico"></i>
+                            <i class="fas fa-trash ico1"></i>
+                        </button>
+                        <button class="filiere-item">
+                            <a href="">
+                                <i class="fas fa-book"></i> ICT4D
+                            </a>
+                            
+                            <div class="stat">
+                                effectif=1200
+                            </div>
+                            <i class="fas fa-edit ico"></i>
+                            <i class="fas fa-trash ico1"></i>
+                        </button>
+                        <div class="filtre-affichage"></div>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-md-2">
+                                          <input type="text" name="newFiliere" id="NewFiliere" class="form-control" placeholder="Ajouter une nouvelle filiere">
+                                    </br> 
+                                    </div>
+                                    <div class="col-md-1">
+                                        <div class="filter-btn">
+                                            <a href="#" class="btn btn-default">+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>                 
+                </div>
+            </div>
+            
+                <div class="tableau-filiere">
+                    <table class="table-filiere">
+                        <h5>Liste des specialite de la filiere :INFO-FONDA</h5>
+                        <tr>
+                            <th>Num</th>
+                            <th>Nom </th>
+                            <th>Element 2</th>
+                            <th>Element 3</th>
+                            <th>Element 4</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="value" id="caseElement"></td>
+                            <td>Genie Logiciel</td>
+                            <td>Value 2</td>
+                            <td>Value 3</td>
+                            <td>Value 4</td>
+                            <td>
+                            <button class="btn "><i class="fas fa-edit "></i> Editer  </button>
+                            <button class="btn "><i class="fas fa-trash delete"></i> Supprimer</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="value" id="caseElement"></td>
+                            <td>DataSciences</td>
+                            <td>Value 2</td>
+                            <td>Value 3</td>
+                            <td>Value 4</td>
+                            <td>
+                            <button class="btn "><i class="fas fa-edit "></i> Editer  </button>
+                            <button class="btn "><i class="fas fa-trash delete"></i> Supprimer</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="value" id="caseElement"></td>
+                            <td>Securite Informatique</td>
+                            <td>Value 2</td>
+                            <td>Value 3</td>
+                            <td>Value 4</td>
+                            <td>
+                            <button class="btn "><i class="fas fa-edit "></i> Editer  </button>
+                            <button class="btn "><i class="fas fa-trash delete"></i> Supprimer</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="value" id="caseElement"></td>
+                            <td>Reseau et telecom</td>
+                            <td>Value 2</td>
+                            <td>Value 3</td>
+                            <td>Value 4</td>
+                            <td>
+                            <button class="btn "><i class="fas fa-edit "></i> Editer  </button>
+                            <button class="btn "><i class="fas fa-trash delete"></i> Supprimer</button>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    <div class="ActionMultiple">
+                    <div class="form-group"></div>
+                                    <div class="col-md-4">
+                                          <input type="text" name="newFiliere" id="NewFiliere" class="form-control" placeholder="Nom de la specialite">
+                                    </br> 
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="filter-btn">
+                                            <a href="#" class="btn btn-default">Ajouter</a>  
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="col-md-1">
+                                        <div>
+                                            <div class="filter-btn">
+                                                <a href="#" class="btn btn-default">Rechercher</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                    </div>
+                </div>
+                
+            
+        </div>
+    </div>
+</div>
+</div>
+
 
 <div id="footer">
     <div class="container-fluid">

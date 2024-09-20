@@ -1,6 +1,6 @@
 
 /********************** css connexion **********************/
-        /* Styles généraux */
+
         body {
             font-family: 'Open Sans', sans-serif;
             background: #ededed;
@@ -11,22 +11,40 @@
             align-items: center;
             height: 100vh;
         }
-
+        label{
+            position: relative;
+            top:15px;
+            left: 10px;
+            background-color: #ffffff;
+            width: 30%;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container .title{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font: bold;
+            font-family: Tahoma;
+            font-size: xx-large;
+        }
         .container {
             display: flex;
             max-width: 900px;
             width: 100%;
             background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 20px rgba(148, 113, 0, 0.1);
             overflow: hidden;
         }
 
         /* Image */
         .image-container {
             flex: 1;
-            background: url('https://via.placeholder.com/450x500') no-repeat center center;
             background-size: cover;
+            width: 100%;
+            background-color: #e77800;
+
         }
 
         /* Formulaire */
@@ -36,6 +54,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            width: 100%;
         }
 
         .form-container h2 {
@@ -63,33 +82,35 @@
         }
 
         .form-group input:focus {
-            border-color: #0074BD;
+            border-color: #f39f31;
             outline: none;
         }
 
         .btn {
             width: 100%;
             padding: 12px;
-            background-color: #ff8400;
+            background-color: #f38f31;
             color: #fff;
             border: none;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease-in-out;
         }
 
         .btn:hover {
             background-color: #e77800;
         }
-
         .link {
             margin-top: 10px;
             text-align: center;
         }
-
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
         .link a {
-            color: #0074BD;
+            color: #f38f31;
             text-decoration: none;
         }
 

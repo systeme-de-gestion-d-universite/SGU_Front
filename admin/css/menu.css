@@ -533,6 +533,7 @@ nav#cssmenu {
   background-color: #2a2a2a;
 }
 .main-content {
+
   margin-left: 0px;
   padding: 20px;
   transition: margin-left 0.3s;
