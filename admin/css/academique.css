@@ -98,7 +98,8 @@ i:hover{
 }
 .table-filiere{
     max-width: 100%;
-    position: absolute;
+    top:15%;
+    position: relative;
 }
 
 

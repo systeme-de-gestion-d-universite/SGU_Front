@@ -538,6 +538,12 @@ nav#cssmenu {
   padding: 20px;
   transition: margin-left 0.3s;
 }
+.main-content-Personel {
+
+  margin-left: 0px;
+  padding: 20px;
+  margin-left: 15%;
+}
 
 @media screen and (max-width: 600px) {
   .sidebar {
@@ -720,10 +726,11 @@ nav#cssmenu {
   color: #333;
   background-color: #fff;
   border-color: #ccc;
+  border-radius: 5%;
 }
 
 .btn-default:hover {
-  color: #333;
+  color: #f38f31;
   background-color: #e6e6e6;
   border-color: #adadad;
 }

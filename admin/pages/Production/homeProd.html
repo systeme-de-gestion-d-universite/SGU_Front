@@ -64,7 +64,8 @@
                 <i class="fas fa-chart-line"></i> Reporting
             </button>
             <button class="menu-item">
-                <i class="fas fa-users"></i> Gestion du Personnel
+                <a href="../Personnel/homePersonel.html">
+                <i class="fas fa-users"></i> Gestion du Personnel</a>
             </button>
         </div>
     </div>
@@ -97,21 +98,20 @@
             </div>
         </div>
     </div>
-    
-                    <div class="admin-page-content-service">
-                        <div class="row hidden" id="verbaleContent"></div>
-                        <div class="col-md-4">
-                        <div class="filtre-affichage">
-                            <form class="form-horizontal">
-                                <div class="form-group">
-                                    <label for="modelSelect" class="control-label col-xs-2">Model:</label>
-                                    <div class="col-xs-12">
-                                        <select id="modelSelect" class="form-control">
-                                            <option value="note">Note</option>
-                                            <option value="correction">Correction</option>
-                                            <option value="deliberation">Deliberation</option>
-                                            <option value="documents">Documents</option>
-                                            <option value="fiche">Fiche</option>
+    <div class="admin-page-content-service">
+        <div class="row hidden" id="verbaleContent"></div>
+            <div class="col-md-4">
+                <div class="filtre-affichage">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="modelSelect" class="control-label col-xs-2">Model:</label>
+                                <div class="col-xs-12">
+                                    <select id="modelSelect" class="form-control">
+                                        <option value="note">Note</option>
+                                        <option value="correction">Correction</option>
+                                        <option value="deliberation">Deliberation</option>
+                                        <option value="documents">Documents</option>
+                                        <option value="fiche">Fiche</option>
                                         </select>
                                     </div>
                                 </div>

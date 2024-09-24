@@ -68,7 +68,7 @@
                 </a>
             </button>
             <button class="menu-item">
-                <a href="">
+                <a href="../Production/homeProd.html">
                 <i class="fas fa-file-alt"></i> Production de Documents
             </a>
             </button>
@@ -85,7 +85,7 @@
                 
             </button>
             <button class="menu-item">
-                <a href="">
+                <a href="../Personnel/homePersonel.html">
                     <i class="fas fa-users"></i> Gestion du Personnel
                 </a>
             </button>
@@ -264,7 +264,8 @@
                             <i class="fas fa-edit ico"></i>
                             <i class="fas fa-trash ico1"></i>
                         </button>
-                        <div class="filtre-affichage"></div>
+                        
+                        <div class="filtre-affichage">
                             <form class="form-horizontal">
                                 <div class="form-group">
                                     <div class="col-md-2">
@@ -284,64 +285,97 @@
             </div>
             
                 <div class="tableau-filiere">
+                    <div class="col-md-4">
+                        <div class="filtre-affichage">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="admin-page-statut" class="control-label col-xs-2">Niveau:</label>
+                                    <div class="col-xs-12 matiere">
+                                        <select id="matiereProc" class="form-control">
+                                            <option>INF-L1</option>
+                                            <option>INF-L2</option>
+                                            <option>INF-L3</option>
+                                            <option>INF-M1</option>
+                                            <option>INF-M2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                     <table class="table-filiere">
-                        <h5>Liste des specialite de la filiere :INFO-FONDA</h5>
+                        <h5>Grille de niveau pour filiere %nomfiliere</h5>
+                        
                         <tr>
-                            <th>Num</th>
-                            <th>Nom </th>
-                            <th>Element 2</th>
-                            <th>Element 3</th>
-                            <th>Element 4</th>
-                            <th>Action</th>
+                            <th>All</th>
+                            <th>UE</th>
+                            <th>INTITULE</th>
+                            <th>TYPE</th>
+                            <th>CREDIT</th>
+                            <th>CC</th>
+                            <th>TP</th>
+                            <th>SN</th>
+                            <th>TOTAL</th>
+                            <th>SEMESTRE</th>
+                            <th>SYLLABUS</th>
+                            <th>ACTION</th>
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="value" id="caseElement"></td>
-                            <td>Genie Logiciel</td>
-                            <td>Value 2</td>
-                            <td>Value 3</td>
-                            <td>Value 4</td>
+                            <td>INF-111</td>
+                            <td>aLAGORITHMIQUE ET PROGRAMATION</td>
+                            <td>OBLIGATOIRE</td>
+                            <td>6</td>
+                            <td>30</td>
+                            <td>20</td>
+                            <td>50</td>
+                            <td>100%</td>
+                            <td>1</td>
+                            <td><button class="btn "><i class="fas fa-download "></i></button></td>
                             <td>
-                            <button class="btn "><i class="fas fa-edit "></i> Editer  </button>
-                            <button class="btn "><i class="fas fa-trash delete"></i> Supprimer</button>
+                            <button class="btn "><i class="fas fa-edit "></i></button>
+                            <button class="btn "><i class="fas fa-trash delete"></i></button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" name="value" id="caseElement"></td>
+                            <td>INF-112</td>
+                            <td>PROGRAMMATION C++</td>
+                            <td>OBLIGATOIRE</td>
+                            <td>6</td>
+                            <td>30</td>
+                            <td>20</td>
+                            <td>50</td>
+                            <td>100%</td>
+                            <td>1</td>
+                            <td><button class="btn "><i class="fas fa-download "></i></button></td>
+                            <td>
+                            <button class="btn "><i class="fas fa-edit "></i></button>
+                            <button class="btn "><i class="fas fa-trash delete"></i></button>
                             </td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="value" id="caseElement"></td>
-                            <td>DataSciences</td>
-                            <td>Value 2</td>
-                            <td>Value 3</td>
-                            <td>Value 4</td>
+                            <td>INF-121</td>
+                            <td>ARCHITECTTURE RESEAUX</td>
+                            <td>OPTIONEL</td>
+                            <td>3</td>
+                            <td>30</td>
+                            <td>0</td>
+                            <td>70</td>
+                            <td>100%</td>
+                            <td>1</td>
+                            <td><button class="btn "><i class="fas fa-download "></i></button></td>
                             <td>
-                            <button class="btn "><i class="fas fa-edit "></i> Editer  </button>
-                            <button class="btn "><i class="fas fa-trash delete"></i> Supprimer</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" name="value" id="caseElement"></td>
-                            <td>Securite Informatique</td>
-                            <td>Value 2</td>
-                            <td>Value 3</td>
-                            <td>Value 4</td>
-                            <td>
-                            <button class="btn "><i class="fas fa-edit "></i> Editer  </button>
-                            <button class="btn "><i class="fas fa-trash delete"></i> Supprimer</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" name="value" id="caseElement"></td>
-                            <td>Reseau et telecom</td>
-                            <td>Value 2</td>
-                            <td>Value 3</td>
-                            <td>Value 4</td>
-                            <td>
-                            <button class="btn "><i class="fas fa-edit "></i> Editer  </button>
-                            <button class="btn "><i class="fas fa-trash delete"></i> Supprimer</button>
+                            <button class="btn "><i class="fas fa-edit "></i></button>
+                            <button class="btn "><i class="fas fa-trash delete"></i></button>
                             </td>
                         </tr>
                         
                     </table>
                     <div class="ActionMultiple">
-                    <div class="form-group"></div>
+                    <div class="form-group">
                                     <div class="col-md-4">
                                           <input type="text" name="newFiliere" id="NewFiliere" class="form-control" placeholder="Nom de la specialite">
                                     </br> 
@@ -377,7 +411,7 @@
         <div class="row">
             <div class="col-xs-6">
                 <div class="copyright">
-                    &copy; 2024 facteasy.net
+                    &copy; 2024 SYGEN.Tech
                 </div>
             </div>
             <div class="col-xs-6">
@@ -392,6 +426,7 @@
 <!-- jQuery -->
 <script src="../../js/jquery.js"></script>
 <script src="../../js/header.js"></script>
+<script src="../../js/academic.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="../../js/bootstrap.min.js"></script>
 </body>

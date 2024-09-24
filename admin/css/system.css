@@ -198,15 +198,15 @@ table tr th:first-child {
 .tableau table thead {
   font-size: 13px;
 }
-/*.tableau table th {
+.tableau table th {
   text-transform: uppercase;
-  background: #e1e2dc;
+  background: #252525;
   font-weight: normal;
   border-width: 1px;
   border-style: solid;
   border-color: #bebfb9;
   padding: 3px 10px;
-}*/
+}
 
 @media screen and (max-width: 560px) {
 
@@ -216,7 +216,11 @@ table tr th:first-child {
 
 }
 
-
+.footer-personel {
+  gap: 2;
+  margin-left: 35%;
+  background-color: #c26400;
+}
 /* media queries */
 @media all and (min-width: 600px) {
 
