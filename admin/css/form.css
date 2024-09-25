@@ -1,0 +1,70 @@
+        /* Styles pour le pop-up de recrutement */
+        #recrutPopup {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 1000;
+        }
+        #recrutementForm {
+            background: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            width: 50%;
+            border-radius: 8px;
+        }
+        .close-btn {
+            cursor: pointer;
+            float: right;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+/* Deux éléments par ligne */
+.form-group-inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group-inline .form-group {
+    width: 48%;
+}
+
+/* Champs du formulaire */
+#recrutementForm input[type="text"], 
+#recrutementForm input[type="date"], 
+#recrutementForm select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Bouton de fermeture du popup */
+#recrutPopup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Style du bouton Ajouter */
+#recrutementForm button[type="submit"] {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#recrutementForm button[type="submit"]:hover {
+    background-color: #0056b3;
+}

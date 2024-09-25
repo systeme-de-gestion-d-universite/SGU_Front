@@ -175,36 +175,52 @@
                             <div class="tableau">
                                 <table class="table table-condensed table-hover table-striped">
                                     <thead>
-                                    <tr>
-                                        <th class="select-all"><input class="form-checkbox" title="Sélectionner toutes les lignes du tableau" type="checkbox"></th>
-                                        <th>Nom et Prenom</th>
-                                        <th>Matricule</th>
-                                        <th>Fonction</th>
-                                        <th>Etablissement</th>
-                                        <th>services</th>
-                                        <th>Action</th>
-                                    </tr>
+                                        <tr>
+                                            <th class="select-all"><input class="form-checkbox" title="Sélectionner toutes les lignes du tableau" type="checkbox"></th>
+                                            <th>Code</th>
+                                            <th>UE</th>
+                                            <th>Niveau</th>
+                                            <th>Semestre</th>
+                                            <th>Enseignants affectés</th>
+                                            <th>Actions</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td><input class="form-checkbox" title="Sélectionner cette ligne" type="checkbox"></td>
-                                        <td>atangana martin</td>
-                                        <td>18O287E</td>
-                                        <td>enseignant</td>
-                                        <td>Departement d'informatique</td>
-                                        <td>charger de cours</td>
-                                        <td><a href="#">modifier</a> | <a href="#">supprimer</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input class="form-checkbox" title="Sélectionner cette ligne" type="checkbox"></td>
-                                        <td>Mbarga seccousse</td>
-                                        <td>19K987M</td>
-                                        <td>non-enseignant</td>
-                                        <td>Departement de Physique</td>
-                                        <td>Maintenances materiel</td>
-                                        <td><a href="#">modifier</a> | <a href="#">supprimer</a></td>
-                                    </tr>
-                                    <!-- Ajoutez d'autres lignes ici -->
+                                        <tr>
+                                            <td><input class="form-checkbox" title="Sélectionner cette ligne" type="checkbox"></td>
+                                            <td>INF101</td>
+                                            <td>Introduction à l'informatique</td>
+                                            <td>L1</td>
+                                            <td>S1</td>
+                                            <td>
+                                                <select multiple class="form-control">
+                                                    <option>Dr. Atangana Martin</option>
+                                                    <option>Prof. Mbarga Seccousse</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-xs btn-success">Ajouter</button>
+                                                <button class="btn btn-xs btn-danger">Retirer</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input class="form-checkbox" title="Sélectionner cette ligne" type="checkbox"></td>
+                                            <td>MAT102</td>
+                                            <td>Algèbre linéaire</td>
+                                            <td>L1</td>
+                                            <td>S1</td>
+                                            <td>
+                                                <select multiple class="form-control">
+                                                    <option>Dr. Nkolo Emma</option>
+                                                    <option>Prof. Essomba Paul</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-xs btn-success">Ajouter</button>
+                                                <button class="btn btn-xs btn-danger">Retirer</button>
+                                            </td>
+                                        </tr>
+                                        <!-- Ajoutez d'autres lignes ici -->
                                     </tbody>
                                 </table>
                             </div>

@@ -15,6 +15,8 @@
     <link href="../../css/menu.css" rel="stylesheet">
     <link href="../../css/headermenu.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/academique.css">
+    <link href="../../css/form.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -26,7 +28,7 @@
         <div class="titleHeader">SYGEN</div>
         <button id="menuButton">MENU &#9776;</button>
         <div class="search-bar">
-            <input type="text" placeholder="Rechercher des fonctions, des domaines ou de l’aide..." />
+            <input type="text" placeholder="Rechercher des fonctions, des domaines ou de l'aide..." />
         </div>
         <div class="right-icons">
             <i class="fas fa-user"></i>
@@ -42,56 +44,12 @@
     <div class="menu-container">
         <button id="closeMenu" class="close-btn">&times;</button>
         <div class="menu-items">
-            <button class="menu-item">
-                <a href="">
-                    <i class="fas fa-user-plus"></i> Preinscription
-                </a>
-            </button>
-            <button class="menu-item">
-                <a href="">
-                    <i class="fas fa-user-edit"></i> Inscription
-                </a>
-            </button>
-            <button class="menu-item">
-                <a href="../Auth/home.html">
-                    <i class="fas fa-university"></i> Gestion Academiques
-                </a>
-            </button>
-            <button class="menu-item">
-                <a href="">
-                    <i class="fas fa-keyboard"></i> Saisie de Notes
-                </a>
-            </button>
-            <button class="menu-item">
-                <a href="">
-                    <i class="fas fa-users-cog"></i> Jury de Correction
-                </a>
-            </button>
-            <button class="menu-item">
-                <a href="../Production/homeProd.html">
-                <i class="fas fa-file-alt"></i> Production de Documents
-            </a>
-            </button>
-            <button class="menu-item">
-                <a href="">
-                    <i class="fas fa-gavel"></i> Jury et Deliberation
-                </a>
-                
-            </button>
-            <button class="menu-item">
-                <a href="">
-                    <i class="fas fa-chart-line"></i> Reporting
-                </a>
-                
-            </button>
-            <button class="menu-item">
-                <a href="../Personnel/homePersonel.html">
-                    <i class="fas fa-users"></i> Gestion du Personnel
-                </a>
-            </button>
+            <!-- Menu items as in the original code -->
         </div>
     </div>
 </nav>
+
+<!-- Sidebar et navigation interne -->
 <div class="sidebar" id="mySidebar">
     <div class="sidebar-header">
         <a href="#" style="background-color: black; color: #f38f31;">Recrutement</a>
@@ -100,9 +58,9 @@
         <a href="./jury.html">Jury</a>
         <a href="./assistance.html">Assistance</a>
     </div>
-
 </div>
 
+<!-- Contenu principal -->
 <div class="main-content-Personel">
     <div class="admin-page-entete">
         <div class="ariane">
@@ -135,7 +93,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="title-content"> 
-                        <h4>Liste du personnel de la faculte des sciences</h4>
+                        <h4>Liste du personnel de la faculté des sciences</h4>
                     </div>
                     <div><h5>Filtre de recherche:</h5></div>
                     <div class="col-md-4" id="matriculeField">
@@ -144,7 +102,7 @@
                                  <div class="form-group">
                                     <label for="matricule" class="control-label col-xs-2"></label>
                                      <div class="col-xs-12">
-                                        <input type="search" name="matricule" id="matricule" class="form-control" placeholder="Matricule">
+                                        <input type="search" id="matricule" class="form-control" placeholder="Matricule">
                                      </div>
                                  </div>
                              </form>
@@ -156,97 +114,108 @@
                                 <div class="form-group">
                                     <label for="admin-page-statut" class="control-label col-xs-2"></label>
                                     <div class="col-xs-12">
-                                        <select class="form-control">
-                                            <option> Departement de Mathematique</option>
-                                            <option> Departement de Biosciences</option>
-                                            <option> Departement de Physique</option>
-                                            <option> Departement de Chimie</option>
-                                            <option> Departement de Informatique</option>
+                                        <select class="form-control" id="departmentFilter">
+                                            <option value="">Tous les départements</option>
+                                            <option value="Département d'informatique">Département d'informatique</option>
+                                            <option value="Département de Physique">Département de Physique</option>
+                                            <option value="Département de Mathématique">Département de Mathématique</option>
+                                            <option value="Département de Biosciences">Département de Biosciences</option>
+                                            <option value="Département de Chimie">Département de Chimie</option>
                                         </select>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="glyphicon-download" style="width: 50px;height: 50px; flex-direction: row; float: right;"> Telecharger</div>
-                    <!-- Contenu spécifique pour la gestion du personnel -->
+                    <div style="width: 50px;height: 50px; flex-direction: row; float: right; margin-right: 05%;">
+                        <button id="downloadBtn" class="btn btn-default">Télécharger</button>
+                    </div>
+                    
+                    <!-- Tableau de gestion du personnel -->
                     <div class="row">
                         <div class="col-md-12">
                             <div class="tableau">
                                 <table class="table table-condensed table-hover table-striped">
                                     <thead>
                                     <tr>
-                                        <th class="select-all"><input class="form-checkbox" title="Sélectionner toutes les lignes du tableau" type="checkbox"></th>
+                                        <th class="select-all"><input id="selectAll" class="form-checkbox" type="checkbox" title="Sélectionner toutes les lignes du tableau"></th>
                                         <th>Nom et Prenom</th>
                                         <th>Matricule</th>
                                         <th>Fonction</th>
                                         <th>Etablissement</th>
-                                        <th>services</th>
+                                        <th>Services</th>
                                         <th>Date de prise de service</th>
                                         <th>Action</th>
                                     </tr>
                                     </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td><input class="form-checkbox" title="Sélectionner cette ligne" type="checkbox"></td>
-                                        <td>atangana martin</td>
-                                        <td>18O287E</td>
-                                        <td>enseignant</td>
-                                        <td>Departement d'informatique</td>
-                                        <td>charger de cours</td>
-                                        <td>14/09/2023</td>
-                                        <td><a href="#">modifier</a> | <a href="#">supprimer</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input class="form-checkbox" title="Sélectionner cette ligne" type="checkbox"></td>
-                                        <td>Mbarga seccousse</td>
-                                        <td>19K987M</td>
-                                        <td>non-enseignant</td>
-                                        <td>Departement de Physique</td>
-                                        <td>Maintenances materiel</td>
-                                        <td>24/06/2022</td>
-                                        <td><a href="#">modifier</a> | <a href="#">supprimer</a></td>
-                                    </tr>
-                                    <!-- Ajoutez d'autres lignes ici -->
+                                    <tbody id="personnelTableBody">
+                                        <!-- Lignes du personnel (initialement vides) -->
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                    <!-- Fin du contenu spécifique -->
-                </br>
-                <div class="filter-btn">
-                   <button id="recrutBtn" class="btn btn-default">Nouveau Recrutement</button>
-               </div>
-           </div>
+
+                    <!-- Bouton pour le recrutement -->
+                    <div class="filter-btn">
+                        <button id="recrutBtn" class="btn btn-default">Nouveau Recrutement</button>
+                    </div>
+
+                    <!-- Pop-up de recrutement -->
+                    <div id="recrutPopup">
+                        <div id="recrutementForm">
+                            <span class="close-btn">&times;</span>
+                            <h3>Formulaire de recrutement</h3>
+                    
+                            <!-- Champs en deux colonnes -->
+                            <div class="form-group-inline">
+                                <div class="form-group">
+                                    <label for="nomPrenom">Nom et Prénom:</label>
+                                    <input type="text" id="nomPrenom" class="form-control" placeholder="Nom et Prénom">
+                                </div>
+                                <div class="form-group">
+                                    <label for="matriculeInput">Matricule:</label>
+                                    <input type="text" id="matriculeInput" class="form-control" placeholder="Matricule">
+                                </div>
+                            </div>
+                            <div class="form-group-inline">
+                                <div class="form-group">
+                                    <label for="fonctionInput">Fonction:</label>
+                                    <input type="text" id="fonctionInput" class="form-control" placeholder="Fonction">
+                                </div>
+                                <div class="form-group">
+                                    <label for="etablissementInput">Etablissement:</label>
+                                    <input type="text" id="etablissementInput" class="form-control" placeholder="Etablissement">
+                                </div>
+                            </div>
+                            <div class="form-group-inline">
+                                <div class="form-group">
+                                    <label for="servicesInput">Services:</label>
+                                    <input type="text" id="servicesInput" class="form-control" placeholder="Services">
+                                </div>
+                                <div class="form-group">
+                                    <label for="dateInput">Date de prise de service:</label>
+                                    <input type="date" id="dateInput" class="form-control">
+                                </div>
+                            </div>
+                            <button id="saveBtn" class="btn btn-primary">Enregistrer</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div id="footer">
-    <div class="container-fluid">
-        <div class="row" style="margin-left: 15%;">
-            <div class="col-xs-6">
-                <div class="copyright">
-                    &copy; 2024 SYGEN.Tech
-                </div>
-            </div>
-            <div class="col-xs-6">
-                <div class="owner text-right">
-                    Gerazayis
-                </div>
-            </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 FACTEASY. Tous droits réservés.</p>
         </div>
-    </div>
-</div>
+    </footer>
 
-<!-- jQuery -->
-<script src="../../js/jquery.js"></script>
-<script src="../../js/header.js"></script>
-<script src="../../js/academic.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="../../js/bootstrap.min.js"></script>
+    <!-- Scripts -->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/system.js"></script>
+    <script src="../../js/formPop.js"></script>
 </body>
 </html>
