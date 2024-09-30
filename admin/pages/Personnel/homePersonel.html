@@ -28,7 +28,7 @@
         <div class="titleHeader">SYGEN</div>
         <button id="menuButton">MENU &#9776;</button>
         <div class="search-bar">
-            <input type="text" placeholder="Rechercher des fonctions, des domaines ou de l'aide..." />
+            <input type="text" placeholder="Rechercher des fonctions, des domaines ou de l’aide..." />
         </div>
         <div class="right-icons">
             <i class="fas fa-user"></i>
@@ -41,14 +41,59 @@
 
 <!-- Menu déroulant -->
 <nav id="menu" class="menu-hidden">
-    <div class="menu-container">
+        <div class="menu-container">
         <button id="closeMenu" class="close-btn">&times;</button>
         <div class="menu-items">
-            <!-- Menu items as in the original code -->
+            <button class="menu-item">
+                <a href="">
+                    <i class="fas fa-user-plus"></i> Preinscription
+                </a>
+            </button>
+            <button class="menu-item">
+                <a href="">
+                    <i class="fas fa-user-edit"></i> Inscription
+                </a>
+            </button>
+            <button class="menu-item">
+                <a href="../Auth/home.html">
+                    <i class="fas fa-university"></i> Gestion Academiques
+                </a>
+            </button>
+            <button class="menu-item">
+                <a href="">
+                    <i class="fas fa-keyboard"></i> Saisie de Notes
+                </a>
+            </button>
+            <button class="menu-item">
+                <a href="">
+                    <i class="fas fa-users-cog"></i> Jury de Correction
+                </a>
+            </button>
+            <button class="menu-item">
+                <a href="../Production/homeProd.html">
+                <i class="fas fa-file-alt"></i> Production de Documents
+            </a>
+            </button>
+            <button class="menu-item">
+                <a href="">
+                    <i class="fas fa-gavel"></i> Jury et Deliberation
+                </a>
+                
+            </button>
+            <button class="menu-item">
+                <a href="">
+                    <i class="fas fa-chart-line"></i> Reporting
+                </a>
+                
+            </button>
+            <button class="menu-item">
+                <a href="../Personnel/homePersonel.html">
+                    <i class="fas fa-users"></i> Gestion du Personnel
+                </a>
+            </button>
         </div>
     </div>
 </nav>
-
 <!-- Sidebar et navigation interne -->
 <div class="sidebar" id="mySidebar">
     <div class="sidebar-header">
@@ -216,6 +261,7 @@
     <script src="../../js/jquery.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
     <script src="../../js/system.js"></script>
+    <script src="../../js/header.js"></script>
     <script src="../../js/formPop.js"></script>
 </body>
 </html>

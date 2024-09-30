@@ -15,6 +15,7 @@
     <link href="../../css/menu.css" rel="stylesheet">
     <link href="../../css/headermenu.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/academique.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
 
@@ -215,7 +216,7 @@
                     <!-- Fin du contenu spécifique -->
                 </br>
                     <div class="filter-btn">
-                        <button id="recrutBtn" class="btn btn-default">Nouveau Responsable</button>
+                        <button  id="openPopup"  class="btn btn-default">Nouveau Responsable</button>
                     </div>
                 </div>
             </div>
@@ -223,7 +224,40 @@
     </div>
 </div>
 </div>
-
+<!-- Formulaire Pop-up -->
+<div id="popupForm" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+        <h2>Ajouter un nouveau responsable</h2>
+        <form id="responsableForm">
+            <div class="form-group">
+                <label for="nom">Nom et Prénom :</label>
+                <input type="text" class="form-control" id="nom" placeholder="Nom et Prénom">
+            </div>
+            <div class="form-group">
+                <label for="matricule">Matricule :</label>
+                <input type="text" class="form-control" id="matricule" placeholder="Matricule">
+            </div>
+            <div class="form-group">
+                <label for="fonction">Fonction :</label>
+                <input type="text" class="form-control" id="fonction" placeholder="Fonction">
+            </div>
+            <div class="form-group">
+                <label for="etablissement">Établissement :</label>
+                <input type="text" class="form-control" id="etablissement" placeholder="Établissement">
+            </div>
+            <div class="form-group">
+                <label for="titre">Titre :</label>
+                <input type="text" class="form-control" id="titre" placeholder="Titre">
+            </div>
+            <div class="form-group">
+                <label for="services">Services :</label>
+                <input type="text" class="form-control" id="services" placeholder="Services">
+            </div>
+            <button type="submit" class="btn btn-primary">Ajouter</button>
+        </form>
+    </div>
+</div>
 <div id="footer">
     <div class="container-fluid">
         <div class="row" style="margin-left: 15%;">
@@ -245,6 +279,7 @@
 <script src="../../js/jquery.js"></script>
 <script src="../../js/header.js"></script>
 <script src="../../js/academic.js"></script>
+<script src="../../js/responsabilite.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="../../js/bootstrap.min.js"></script>
 </body>
